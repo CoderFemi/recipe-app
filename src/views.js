@@ -60,7 +60,8 @@ const renderRecipes = () => {
         })
     } else {
         const emptyMessage = document.createElement('p')
-        emptyMessage.textContent = 'No notes to show!'
+        emptyMessage.textContent = 'No recipes to show!'
+        emptyMessage.classList.add('empty-message')
         // UPDATE emptyMessage STYLING
         recipesElement.appendChild(emptyMessage)
     }
